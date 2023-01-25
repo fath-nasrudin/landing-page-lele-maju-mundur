@@ -164,21 +164,52 @@ body {
 
 /* Product END */
 
+/* Testi Start */
+#testimonials.section {
+  background-color: #e5e7eb;
+}
+/* Testi End */
 
+/* Buy Now Start */
+#order-now .wrapper {
+  display: flex;
+  align-items: center;
+  
+  width: 100%;
+  padding: 1rem 5rem;
+  background-color: #3882f6;
+  border-radius: 1rem;
+
+  color:#f9faf8;
+  font-size: 1.125rem;
+}
+
+#order-now .content {
+  align-items: flex-start;
+}
+
+#order-now .content--header {
+  color: #f9faf8;
+}
+/* Buy Now End */
 
 /* Button Start */
 .btn {
   padding: 0.5rem 1.5rem;
   border: none;
-  background-color: #3882f6;
   color: white;
 }
 
 .btn--filled {
   border: none;
   background-color: #3882f6;
-  color: white;
 }
+
+.btn--outlined {
+  outline: 2px solid white;
+  background-color: transparent;
+}
+
 /* Button End */
 
 /* CARD Start */
@@ -218,3 +249,22 @@ body {
   outline: 2px solid #1f2937;
 }
 /* CARD End */
+
+/* Quote */
+.quote {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote--text {
+  font-size: 2.25rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.quote--source {
+  align-self: flex-end;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
