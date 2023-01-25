@@ -119,31 +119,29 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   gap: 1rem;
 
   padding: 1.5rem;
 }
 
-/* test purpose */
-.image--container {
-    min-height: 200px;
-    min-width: 200px;
-    background-color: whitesmoke;
-}
-
 .content--header {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #1f2937;
 }
 
 .image--container {
   flex: 1;
 }
 
-/* Hero */
-.section#hero {
+/* Hero Start*/
+#hero.section {
   background-color: #1f2937;
+}
+
+#hero .content {
+  align-items: flex-start;
 }
 
 #hero .content--header {
@@ -156,6 +154,16 @@ body {
   font-size: 1.125rem;
   color: #e5e7eb;
 }
+
+/* Hero END */
+
+/* Product START */
+#products .content {
+  gap: 3rem;
+}
+
+/* Product END */
+
 
 
 /* Button Start */
@@ -172,3 +180,41 @@ body {
   color: white;
 }
 /* Button End */
+
+/* CARD Start */
+.card--container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.card {
+  flex: 0 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 250px;
+  min-height: 250px;
+}
+
+.card--image {
+  flex: 0 0 auto;
+}
+
+.card--content {
+  flex: 1;
+
+  display: flex;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  text-align: center;
+}
+
+.card:hover {
+  outline: 2px solid #1f2937;
+}
+/* CARD End */
